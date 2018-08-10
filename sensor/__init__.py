@@ -22,4 +22,4 @@ def stop_dht22(sensor):
     sensor.cancel()
 
 def stop_pigpio(pigpio):
-    pigpio:memoryview.stop()
+    pigpio.stop()
