@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 
-sudo pigpiod
+echo "start ngrok"
 
-cd $SCRIPT_DIR
-python romaine.py &
+ngrok start ssh --log=stdout --config=$SCRIPT_DIR/ngrok.yml
+
+#sudo pigpiod
+#
+#cd $SCRIPT_DIR
+#python romaine.py &

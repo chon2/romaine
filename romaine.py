@@ -27,4 +27,3 @@ if __name__ == '__main__':
     sensor.stop_dht22(dht22)
     sensor.stop_pigpio(pi)
     print("terminated this program...")
-

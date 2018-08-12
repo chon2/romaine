@@ -1,0 +1,6 @@
+authtoken: 321KoDnMUyZrZt2Cxh46N_kNuwzA6kysWy2mNauqqX
+
+tunnels:
+    ssh:
+        proto: tcp
+        addr: 1122
