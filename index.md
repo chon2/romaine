@@ -14,7 +14,7 @@ Kubernetes Admission Controller를 활용해 요구사항을 만족하는 로직
 ```
 단일 kubernetes 클러스터를 사용합니다.
 어플리케이션은 Deployment resource를 통해 배포됩니다.
-Deployment로 배포되는 어플리케이션 도커이미지는 kakaobank.harbor.{STAGE}만 허용합니다. 
+Deployment로 배포되는 어플리케이션 도커이미지는 kakaobank.harbor.{STAGE}만 허용합니다.
 예를들면 다음과 같습니다.
 ```
 ```python
