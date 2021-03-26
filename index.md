@@ -5,7 +5,8 @@
 ### 1. 과제 내용
 ```
 카카오뱅크에서는 Kubernetes 관리자가 클러스터에 배포되는 리소스가 허용된 형상인지 판단할 책임이 있습니다.
-다음과 같은 상황을 가정했을 때, Kubernetes Admission Controller를 활용해 요구사항을 만족하는 로직과 배포 리소스(manifest)를 작성해주세요.
+다음과 같은 상황을 가정했을 때, 
+Kubernetes Admission Controller를 활용해 요구사항을 만족하는 로직과 배포 리소스(manifest)를 작성해주세요.
 (프로그래밍 언어 제한은 없습니다.)
 ```
 
