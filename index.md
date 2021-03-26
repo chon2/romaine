@@ -18,10 +18,10 @@ Deployment로 배포되는 어플리케이션 도커이미지는 kakaobank.harbo
 예를들면 다음과 같습니다.
 ```
 ```python
-if stage is ‘dev’: 
+if stage is dev: 
     kakaobank.harbor.dev/* 이미지만 허용  
     # ex: kakaobank.harbor.dev/nginx:latest
-if stage is ‘prod’: 
+if stage is prod: 
     kakaobank.harbor.prod/* 이미지만 허용
     # ex: kakaobank.harbor.prod/nginx:latest
 ```
@@ -31,7 +31,7 @@ if stage is ‘prod’:
 배포되는 어플리케이션 도커 이미지가 허용되는 이미지와 다를 시 다음과 같이 동작합니다.
 ```
 ```python
-if stage is ‘dev’: 
+if stage is dev: 
     잘못 작성된 도커 이미지 url을 수정한다.
     """
     ex) quay.io -> kakaobank.harbor.dev
@@ -39,6 +39,6 @@ if stage is ‘dev’:
     ex) gcr.io -> kakaobank.harbor.dev
     ex) {AWS 어카운트 ID}.dkr.ecr.{AWS 리전}.amazonaws.com -> kakaobank.harbor.dev
     """
-if stage is ‘prod’: 
+if stage is prod: 
     배포를 허용하지 X
 ```
