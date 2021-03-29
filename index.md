@@ -25,6 +25,16 @@ if stage is prod:
     kakaobank.harbor.prod/* 이미지만 허용
     # ex: kakaobank.harbor.prod/nginx:latest
 ```
+stage 정보는 Deployment annotation을 통해 제공됩니다. 예를들면 다음과 같습니다.
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: nginx
+    annotations:
+        stage: dev
+```
+
 
 ### 3. Requirement (요구사항)
 ```
