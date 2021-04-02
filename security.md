@@ -7,16 +7,15 @@
 ## 요구사항
 - SG 점검을 하기 위한  환경(Target)을 Terraform IaC로 구현합니다.
   - 3Tier 구조(dmz, app, db subnet)의 아키텍처로 구현
-  - ec2인스턴스에는 db, 웹서비스등을 구축하지 않아도 됨
-    - dmz의 sg
+    - dmz sg
       - 80, 443 inbound 허용
-      - t2.micro ec2에 attach
-    - app의 sg
+      - dmz subnet의 t2.micro ec2에 attach
+    - app sg
       - dmz web traffic만 허용
-      - t2.micro ec2에 attach 
-    - db의 sg
+      - app subnet의 t2.micro ec2에 attach 
+    - db sg
       - app traffic만 허용
-      - tc.micro ec2에 attach
+      - db subnet의 tc.micro ec2에 attach
     - ssh sg
       - 22번 포트 inbound 허용
       - 어떠한 resource에도 해당 sg를 attach하지 않음
@@ -41,10 +40,11 @@
     5. Redeem credits 클릭
 - 과제 검수를 위한 read only 권한의 iam 계정 생성하여 id/pw 정보를 zip파일에 같이 동봉하여 제출합니다.
 ## 우대사항
-- Security Group 관리 플랫폼의 frontend 구현
-- Security Group 참조관계 visualization 구현
-- Security Group 관리 플랫폼 containerization
-- Terraform code 모듈화
+- 다음중 하나 이상을 구현하는 경우
+  - Security Group 관리 플랫폼의 frontend 구현
+  - Security Group 참조관계 visualization 구현
+  - Security Group 관리 플랫폼 containerization
+  - Terraform code 모듈화
 
 ## 산출물
   - SG점검환경 구축을 위한 Terraform IaC 코드
