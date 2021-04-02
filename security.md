@@ -46,7 +46,7 @@
   - Security Group 관리 플랫폼 containerization
   - Terraform code 모듈화
 
-## 산출물
+## 산출물
   - SG점검환경 구축을 위한 Terraform IaC 코드
   - SG관리 플랫폼 소스코드
   - 아키텍처와 usage정보가 포함된 README.md(과제 검수를 위한 read only 권한의 iam 계정정보(id/pw) 포함)
