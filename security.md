@@ -28,8 +28,8 @@
       - Security Group 전체 현황 (아래정보가 반드시 포함되어야함)
         - Aws Account Number, VPC ID, Ec2 Instance ID, Ec2 Instance Name, SG name, SG ID, SG inbound rule, SG outbound rule
       - 상기 리스트에서 개별 선택시 상세내용 조회기능
-    - 변경
-      - SG에 inbound/outbound rule 추가 기능
+    - 추가/변경/삭제
+      - SG에 inbound/outbound rule 추가/변경/삭제 기능
 - 환경 구성 절차 및 개념 검증 수행 내용을 Markdown 문서로 정리합니다.
 
 ## 우대사항
