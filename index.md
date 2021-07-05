@@ -45,12 +45,11 @@ metadata:
 > 배포되는 어플리케이션 도커 이미지가 허용되는 이미지와 다를 시 다음과 같이 동작합니다.
 ```python
 if stage is dev: 
-    잘못 작성된 도커 이미지 url을 수정한다.
-    """
-    ex) quay.io -> kakaobank.harbor.dev
-    ex) ghcr.io -> kakaobank.harbor.dev
-    ex) gcr.io -> kakaobank.harbor.dev
-    ex) {AWS 어카운트 ID}.dkr.ecr.{AWS 리전}.amazonaws.com -> kakaobank.harbor.dev
+    """ 잘못 작성된 도커 이미지 url을 수정한다.
+    ex) quay.io/jaegertracing/jaeger-collector -> kakaobank.harbor.dev/jaegertracing/jaeger-collector
+    ex) ghcr.io/jaegertracing/jaeger-collector -> kakaobank.harbor.dev/jaegertracing/jaeger-collector
+    ex) gcr.io/jaegertracing/jaeger-collector -> kakaobank.harbor.dev/jaegertracing/jaeger-collector
+    ex) {AWS 어카운트 ID}.dkr.ecr.{AWS 리전}.amazonaws.com/jaegertracing/jaeger-collector -> kakaobank.harbor.dev/jaegertracing/jaeger-collector
     """
 if stage is prod: 
     배포를 허용하지 X
